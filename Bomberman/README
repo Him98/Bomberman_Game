@@ -1,0 +1,39 @@
+Bomberman Game
+
+Modularity:
+The code of the game is divided into different modules. The modules are described as follows:
+person.py has the class Person which is the parent class for bomberman and enemy class.
+bomb.py has the class bomb.The file consists of an object named bomb which is used in other files by importing bomb.py .
+levels.py just contains two strings and a list for displaying the different texts.
+getch.py has the code for inputting the instructions for bomberman to move.
+wall.py has the class Wall.The file consists of an object named wall which is used in other files by importing wall.py .
+game.py is the containing the main game.It has the Bomberman and Enemy class implemented in it.
+
+Inheritance:
+game.py is the main file which needs to be executed for running the game. It consists of the Enemy and Bomberman classes which are child classes of the Person class.
+
+Encapsulation:
+__noOfBombs and __enemy in bomb.py are private.
+
+Polymorphism:
+showMan() method is overriden in Enemy and Bomberman class.
+
+Controls:
+a is for moving bomberman left.
+d is for moving bomberman right.
+w is for moving bomberman up.
+s is for moving bomberman down.
+b is for moving placing bomb.
+q is for quiting the game.
+
+Other Details:
+E is for enemy.(Red)
+B is for bomberman.(Blue)
+timer is for bomb.(White)
+/ is for tiles.(Green)
+Game is made in python3.
+There is only one bomb with the bomberman.
+Timer is there for the bomb.
+
+How to run the game?
+>>> python3 game.py
